@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    background-color: #F5F5F5;
+}
+
+/*:::Boton modal:::*/
+.boton-modal{
+    padding: 40px;
+    background-color: #a0746c00;
+}
+
+.boton-modal label{
+    display: inline-block;
+    background-color: rgba(101, 106, 168, 0.3);
+    border: 1px solid #aab1ff;
+    margin: 35px 10px 0px 0px;
+    padding: 15px 25px;
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 300ms ease;
+   }
+   
+.boton-modal label:hover {
+       background-color: #aab1ff;
+   }
+
+#btn-modal{
+    display: none;
+}
+.container-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+}
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}
+.content-modal{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.content-modal h2 {
+    margin-bottom: 15px;
+}
+.content-modal p {
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+.content-modal .btn-cerrar{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal .btn-cerrar label{
+    padding: 7px 10px;
+    background-color: #5488a3;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.content-modal .btn-cerrar label:hover{
+background-color: #185E83;
+}
+.cerrrar-modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+}
+@media screen and (max-width:800px) {
+    .content-modal{
+        width: 90%;
+    }
+}
+
+/*:::Fin de boton modal:::*/
+
+
+
+header{
+    background-image: url(img\ definitivas/hero.svg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo{
+    font-weight: 700;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #0eaef3;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor:pointer;
+    display: none;
+}
+/*:::Hasta aqui es el menu de arriba:::*/
+
+.header-content {
+    display: flex;
+}
+
+.content {
+    padding: 50px 0px 0px 0px;
+}
+
+.content h1 {
+    color: #ffffff;
+    font-size: 42px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 55px;
+}
+
+.content p{
+    margin-top: 30px;
+    color: #aab1ff;
+    text-transform: uppercase;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.btn-1{
+    display: inline-block;
+    background-color: rgba(170, 177, 235, 0.3);
+    border: 1px solid #aab1ff;
+    margin: 35px 10px 0px 0px;
+    padding: 15px 25px;
+    color: #ffffff;
+    border-radius: 25px;
+}
+
+.btn-1:hover{
+    background-color: #aab1ff;
+}
+
+.imgavg{
+    width: 550px;
+    height: 460px;
+}
+
+
+
